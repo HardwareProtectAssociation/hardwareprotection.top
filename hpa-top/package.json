@@ -1,0 +1,42 @@
+{
+  "name": "hpa-top",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .js,.ts,.svelte",
+    "format": "prettier --write .",
+    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,ts,svelte,css}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "@sveltejs/vite-plugin-svelte": "^6.1.1",
+    "@tailwindcss/vite": "^4.1.12",
+    "@tsconfig/svelte": "^5.0.4",
+    "eslint": "^9.33.0",
+    "eslint-plugin-svelte": "^3.11.0",
+    "globals": "^16.3.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.5",
+    "prettier": "^3.6.2",
+    "svelte": "^5.38.1",
+    "svelte-check": "^4.3.1",
+    "tailwindcss": "^4.1.12",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.39.1",
+    "vite": "^7.1.2"
+  },
+  "dependencies": {
+    "daisyui": "^5.0.50"
+  }
+}
