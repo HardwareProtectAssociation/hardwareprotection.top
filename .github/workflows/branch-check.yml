@@ -2,7 +2,7 @@ name: Enforce PR source branch rules
 
 on:
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   check-branch:
