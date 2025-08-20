@@ -4,13 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "eslint . --ext .js,.ts,.svelte",
-    "format": "prettier --write .",
-    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
-    "prepare": "husky"
+    "dev": "bunx --bun vite",
+    "build": "bunx --bun vite build",
+    "preview": "bunx --bun vite preview",
+    "lint": "bunx --bun eslint . --ext .js,.ts,.svelte",
+    "format": "bunx --bun prettier --write .",
+    "check": "bunx --bun svelte-check --tsconfig ./tsconfig.app.json && bunx --bun tsc -p tsconfig.node.json",
+    "prepare": "bunx --bun husky"
   },
   "lint-staged": {
     "*.{js,ts,svelte,css}": [
