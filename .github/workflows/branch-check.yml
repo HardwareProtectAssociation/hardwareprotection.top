@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Ensure only dev can PR into main
         run: |
-          if [ "${{ github.head_ref }}" != "dev" ]; then
+          if [ "${{ github.event.pull_request.head.ref }}" != "dev" ]; then
             echo "❌ Only dev branch can be merged into main."
             exit 1
           fi
